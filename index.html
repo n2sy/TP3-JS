@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css " integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T " crossorigin="anonymous ">
+</head>
+
+<body>
+    <div class="container ">
+        <div class="header ">Gestionnaire des dépenses</div>
+        <div class="central">
+            <label for="intitule">Intitule</label>
+            <input type="text" class="form-control" id="intitule">
+            <label for="intitule">Somme</label>
+            <input type="number" class="form-control" id="somme">
+
+            <div class="boutons">
+                <button class="btn btn-danger" id="btnEffacer">Effacer</button>
+                <button class="btn btn-success" id="btnAjouter">Ajouter</button>
+            </div>
+        </div>
+        <div>
+
+            <label for="filter">Filtrer selon :</label>
+            <input type="number" class="form-control" id="filter"></div>
+        <div>
+            <ol id="list-dep">
+            </ol>
+            <strong>Total des dépenses : <span id="total"></span></strong>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
